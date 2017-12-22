@@ -47,7 +47,7 @@ defaultContentLanguageInSubdir = false
   organizations = [ { name = "Cornell University", url = "" } ]
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
-  avatar = "my_pic1.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
+  avatar = "bubbles.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
   email = "ahs278@cornell.edu"
   address = "101-C Giles St, Ithaca, NY, 14850, USA"
   #office_hours = "Monday 10:00 to 13:00 or email for appointment"
