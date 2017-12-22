@@ -25,15 +25,15 @@ filter_default = 0
 # Use "*" tag to show all projects or an existing tag prefixed with "." to filter by specific tag.
 # To remove toolbar, delete/comment all instances of `[[filter]]` below.
 [[filter]]
-  name = "All"
+  name = "ALL"
   tag = "*"
   
 [[filter]]
-  name = "Deep Learning"
+  name = "HARDWARE"
   tag = ".deep-learning"
 
 [[filter]]
-  name = "Other"
+  name = "FIRMWARE"
   tag = ".demo"
 
 +++
