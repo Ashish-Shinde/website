@@ -1,6 +1,6 @@
 baseurl = "/"  # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
 title = "ASHISH H SHINDE"
-copyright = "&copy; 2017 Your Name"
+copyright = "&copy; 2017 Ashish Shinde"
 theme = "academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
@@ -205,7 +205,7 @@ defaultContentLanguageInSubdir = false
   [[params.social]]
     icon = "envelope"
     icon_pack = "fa"
-    link = "mailto:test@example.org"
+    link = "mailto:ahs278@cornell.edu"
 
 # [[params.social]]
 #   icon = "twitter"
