@@ -30,11 +30,11 @@ filter_default = 0
   
 [[filter]]
   name = "HARDWARE"
-  tag = ".deep-learning"
+  tag = ".hardware"
 
 [[filter]]
   name = "FIRMWARE"
-  tag = ".demo"
+  tag = ".firmware"
 
 +++
 

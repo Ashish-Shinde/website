@@ -19,7 +19,7 @@ image_preview = "firm19.jpg"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ""
+tags = ["firmware"]
 
 # Optional external URL for project (replaces project detail page).
 #external_link = "http://example.org"
