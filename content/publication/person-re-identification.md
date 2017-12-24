@@ -33,7 +33,7 @@ selected = false
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
 #   Simply enter the filename (excluding '.md') of your project file in `content/project/`.
-projects = ["deep-learning"]
+#projects = ["deep-learning"] this was commented to remove it from project page
 
 # Links (optional).
 url_pdf = "http://arxiv.org/pdf/1512.04133v1"
