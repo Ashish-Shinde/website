@@ -38,26 +38,15 @@ A portable, low-cost braille reader has adjustable reading speeds and the abilit
 ### Cricket Call Generator
 {{< youtube  6zPjkK49ztI >}}
 \\
-Designed a cricket call generator using a Direct Digital Synthesis (DDS). Various parameters specifying a cricket call such as, chirp repeat interval, syllable duration, number of syllables were entered through an user interface using a TFT screen and a keypad. The keypad keys were debounced in software. To generate the cricket calls in the range of 1 kHz to 6 kHz, we can sample at any frequency greater than 12 kHz to prevent aliasing. However, in oreder to make sure that the generated sine wave has first harmonic which is at least 20 dB less than the fundamental, we oversample at 96 kHz. A sample value from a 256 entry sine table is sent to a DAC using a SPI channel. 
-
+Designed a cricket call generator using a Direct Digital Synthesis (DDS). Various parameters specifying a cricket call such as, chirp repeat interval, syllable duration, number of syllables were entered through an user interface using a TFT screen and a keypad. The keypad keys were debounced in software. To generate the cricket calls in the range of 1 kHz to 6 kHz, we can sample at any frequency greater than 12 kHz to prevent aliasing. However, in order to make sure that the generated sine wave has first harmonic which is at least 20 dB less than the fundamental, we oversample at 96 kHz. A sample value from a 256 entry sine table is sent to a DAC using a SPI channel. 
 
 ### 1-DOF Helicopter
 {{< youtube  _OEBiSgXTk4 >}}
 \\
-The purpose of this lab is to design is a one degree of freedom helicopter. On the one end of a
-movable beam we have a motor which provides a lift torque and on the other end we have an
-angle sensor which is used by the PID (Proportional-Integral-Derivative) algorithm to generate
-PWM (Pulse Width Modulation) signal which controls the speed of the motor. A PID algorithm
-continuously modifies the motor control based on the error angle. We also use protection
-circuitry to protect microcontroller from the motor inductive load. A Potentiometer and a
-button is used to set the PID parameters and desired angle. The motor control and beam angle
-data is also displayed on the oscilloscope.
+A one degree of freedom helicopter is constructed with a light movable beam. On the one end of a movable beam we have a motor which provides a lift torque and on the other end we have an angle sensor which is used by the PID (Proportional-Integral-Derivative) algorithm to generate PWM (Pulse Width Modulation) signal which controls the speed of the motor. A PID algorithm continuously modifies the motor control based on the error angle. We also use protection circuitry to protect microcontroller from the motor inductive load. A Potentiometer and a button is used to set the PID parameters and desired angle. The motor control and beam angle data is also displayed on the oscilloscope.
 
 ### TFT Video Game
 {{< youtube CMDxxUYti2c >}}
 \\
-ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor,
-scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tem
-pus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla
- eleifend gravida.
+The game consists of a paddle, barriers and number of balls which are either reflected or collected by the barriers. The paddle was implemented using an ADC and a potentiometer. The balls collide as per the elastic collision and conserve the momentum. Since the frame rate was required to be minimum 15 frames/second, all the ball collision vector math was performed in fixed-point to make sure that the game does not lag. Along with the TFT display, we also use DMA (Direct Memory Access) to add three different sound effects to the game. The advantage of using DMA is that it operates without any CPU intervention and is capable of transferring data bursts at high sample rates to produce the real time sound effects.
 

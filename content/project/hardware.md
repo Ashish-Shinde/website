@@ -63,7 +63,7 @@ The CPI results for various benchmarks are summarized below:
 |`cmult`        | 3.99     |  2.15       |
 
 ### Superscalar Processor
-![alternative text for search engines](/img/super3.PNG)
+![alternative text for search engines](/img/super4.PNG)
 We attempted to design a dual-issue, in-order, stalling pipelined superscalar processor. The ASIC toolflow was used to compare the area, energy and cycle time of the superscalar processor with the single-issue, stalling pipelined processor. The superscalar processor can fetch, decode and execute two independent instructions at a time. The instructions such as ADD, ADDI can be issued in both the pipes, while the instructions such as LW, MUL can be issued only in the second pipe. Therefore, the instructions are swizzeled in the decode (D) stage before issuing them to the appropriate pipe. The processor uses stalling for inter and intra fetch-block data dependencies.
 
 The superscalar processor improves the CPI for various benchmarks by 12% to 48%. The power, energy, execution time comparision for one of the benchmarks is as follows:
@@ -79,6 +79,6 @@ The superscalar processor improves the CPI for various benchmarks by 12% to 48%.
   
 ### Blocking Cache
 ![alternative text for search engines](/img/cache1.PNG)
-The baseline design consisted a direct-mapped, write-back cache. The datapath of this baseline design is shown above while the control path included a FSM. The cache has 16 four-word (16 bytes) cache lines with a total capacity of 256 bytes. Each cache line also has a corresponding valid bit and dirty bit (for write-back cache) in the control unit. The alternative design attempts to reduce the miss rate (specificaaly conflit misses) by implementing a 2-way set associative cache. The alternative design has same capacity and uses LRU replacement policy for cache line eviction.
+The baseline design consisted a direct-mapped, write-back cache. The datapath of this baseline design is shown above while the control path included a FSM. The cache has 16 four-word (16 bytes) cache lines with a total capacity of 256 bytes. Each cache line also has a corresponding valid bit and dirty bit (for write-back cache) in the control unit. The alternative design attempts to reduce the miss rate (specifically conflit misses) by implementing a 2-way set associative cache. The alternative design has same capacity and uses LRU replacement policy for cache line eviction.
 
 We wrote various benchmarks to compare the performance of both the deisgns for addresses with different spatial and temporal locality. Generally, the miss rate is comparable for benchmarks with high temporal and spatial locality. But for the benchmark such as pointer-chase or non-unit strides which has low temporal and spatail locality, the alternative design has lower miss rate due to reduced conflict misses. In some cases due to higher capacity misses, the baseline has lower miss rate than the alternative design.  
