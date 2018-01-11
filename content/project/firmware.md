@@ -3,7 +3,7 @@
 date = "2016-04-27"
 
 # Project title.
-title = "Firmware/Embedded Systems Projects"
+title = "FPGA, Firmware/Embedded Systems Projects"
 
 # Project summary to display on homepage.
 #summary = "An example of linking directly to an external project website using `external_link`."
@@ -28,6 +28,13 @@ tags = ["firmware"]
 math = false
 
 +++
+
+### Hardware ODE Solver
+![alternative text for search engines](/img/dda_solver.png)
+Simulated a coupled spring-mass system using DE1-SoC board. We use DDA (Digital Differential Analyzer) solver to find the positions of two particles attached to the spring and plot them on the VGA. The DDA solver is implemented in FPGA fabric using integrators, signed multipliers and adders. All the computations are done in fixed-point. 
+
+The overall system is shown above. The HPS gets the initial conditions such as spring constants from the UART and writes them to the memory mapped PIO port. The DDA solver reads these values and starts computing particle positions. We write an EBAB bus master that writes these positions values to the pixel buffer of VGA subsystem.
+
 
 ### Portable Braille Reader
 {{< youtube  B3hEWhktRMw >}}
