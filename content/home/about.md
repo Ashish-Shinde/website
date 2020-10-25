@@ -35,10 +35,10 @@ weight = 5
 
 # Biography
 
-I have graduated with Masters in Computer Engineering from Cornell University in Dec, 2017. My interests include RTL design, Verification, FPGA design and Firmware Development. Currently I am working as a research assistant in Zhang Research Group under Prof. Zhiru Zhang on FPGA design and also under Prof. Adam Bojanczyk on an independent GPU project. Previously, I haved worked as a research assistant under Prof. Christoph Studer in VLSI Information Processing(VIP) Group. Prior to joining Cornell, I have worked as a Mainframe Developer at TCS.   
-##### Selected Coursework                                           
-* _Computer Architecture_  
-* _Complex ASIC Design_    
-* _Digital VLSI_
-* _Microcontroller Design_
-* _Embedded Linux_
+Hi, Thanks for checking out my profile. My name is Ashish and I am a graduate student at Cornell University. On this page, you will find some of my projects and class labs.    
+###### Selected Coursework                                           
+#* _Computer Architecture_  
+#* _Complex ASIC Design_    
+#* _Digital VLSI_
+#* _Microcontroller Design_
+#* _Embedded Linux_
